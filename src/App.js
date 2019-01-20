@@ -1,18 +1,12 @@
 import React, { Fragment } from 'react';
-import styled from 'styled-components';
 import GlobalStyle from './styles/global';
 
-const Title = styled.h1`
-  color: white;
-  font-size: 32px;
-`;
+import Home from './pages/Home';
 
 const App = () => (
   <Fragment>
     <GlobalStyle />
-    <div className="App">
-      <Title>Hello World</Title>
-    </div>
+    <Home />
   </Fragment>
 );
 
