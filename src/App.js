@@ -1,28 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import styled from 'styled-components';
+import GlobalStyle from './styles/global';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const Title = styled.h1`
+  color: white;
+  font-size: 32px;
+`;
+
+const App = () => (
+  <Fragment>
+    <GlobalStyle />
+    <div className="App">
+      <Title>Hello World</Title>
+    </div>
+  </Fragment>
+);
 
 export default App;
